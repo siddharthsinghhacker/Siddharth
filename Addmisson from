@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+ 
+<head>
+    <style>
+        .left {
+            float: left;
+            width: 50%;
+        }
+ 
+        .right {
+            float: right;
+            width: 50%;
+        }
+ 
+        .group:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+ 
+        @media screen and (max-width: 480px) {
+ 
+            .left,
+            .right {
+                float: none;
+                width: auto;
+            }
+        }
+    </style>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <title></title>
+    <SCRIPT type="text/javascript">
+        window.history.forward();
+ 
+        function noBack() {
+            window.history.forward();
+        }
+    </SCRIPT>
+ 
+</head>
+ 
+<BODY onLoad="noBack();" onpageshow="if (event.persisted) noBack();" onUnload="">
+ 
+    <body>
+        <div class="container centered">
+            <header>
+                <div align="center">
+            </header>
+            <div id="top" style="font-size:22px"><strong>ONLINE ADMISSION FORM 2021-2022 (Asutosh memorial school0)</strong></div>
+            <article> <br><br>
+                <div class="group">
+                    <div class="left">
+                        <form name="login" method="post" action="/csu/login.php" onSubmit="return process(this);">
+                            <ul class="form-style-1">
+                                <div align="center">
+                                    <h1 style="color:#800000; font-size:30px">Login</h1><br>
+                                </div>
+                                <div align="center">
+                                </div>
+                                <li><input type="text" name="user" placeholder="Enter Email-id" required maxlength="50" class="field-long"></li>
+                                <li><input type="password" name="password" placeholder="Password" required maxlength="50" class="field-long"></li>
+                                <br>
+                                <li>
+                                    <div align="center"><input type="submit" class="action" name="login" value="LOGIN" style=" font-weight:600; width:200px"></div>
+                                </li>
+                            </ul>
+                        </form>
+ 
+                    </div>
+                    <div class="right">
+ 
+ 
+ 
+                        <ul class="form-style-1"><br><br>
+ 
+ 
+ 
+ 
+ 
+ 
+                            <li><a href="register.php" style=" text-decoration:none;">
+                                    <div align="center"><input name="button" type="button" class="action" style="font-weight:600; width:200px" value="NEW REGISTRATION"></div>
+                                </a></li>
+                            <li>
+                                <div align="center">or</div>
+                            </li>
+                            <li><a href="forgot-password.php" style=" text-decoration:none;">
+                                    <div align="center"><input type="button" class="action" value="FORGOT PASSWORD" style="font-weight:600; width:200px"></div>
+                            </li></a>
+                            <li>
+                                <div align="center">or</div>
+                            </li>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                            <li><a href="../index.php" style=" text-decoration:none;">
+                                    <div align="center"><input type="button" class="action" value="Back to Main Page" style="font-weight:600; width:200px"></div>
+                                </a></li>
+ 
+                        </ul>
+                        </form>
+                    </div>
+                </div>
+            </article>
+            <footer>Ashutosh memorial school</footer>
+        </div>
+    </body>
+ 
+</html>
